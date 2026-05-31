@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 :root {
   --Green700: hsl(158, 42%, 18%);
   --Black: hsl(212, 21%, 14%);
@@ -6,7 +7,6 @@
   --White: hsl(0, 0%, 100%);
   --Green: hsl(158, 36%, 37%);
 }
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,21 +35,21 @@ picture {
 }
 .product-card {
   background-color: var(--White);
-  margin: 16px;
+  margin: 1rem;
   max-width: 575px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
-@media (max-width: 540px) {
+@media (max-width: 33.75em) {
   .product-card {
     grid-template-columns: 1fr;
   }
 }
 .product-card h1 {
   color: var(--Black);
-  margin: 16px 0 24px;
+  margin: 1rem 0 1.5rem;
   line-height: 1;
 }
 .product-card .cart-btn {
@@ -62,9 +62,9 @@ picture {
   align-items: center;
   justify-content: center;
   border: 0;
-  border-radius: 8px;
-  gap: 8px;
-  padding: 16px;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 .product-card .cart-btn:hover {
   background-color: var(--Green700);
@@ -73,38 +73,32 @@ picture {
   max-width: 15px;
 }
 .product-card .right {
-  padding: 24px;
+  padding: 1.5rem;
 }
 .product-card .right .perfume {
   letter-spacing: 2px;
 }
 .product-card .right .discription {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   font-size: 14px;
   line-height: 1.4;
 }
 .product-card .right .pricing {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
-.product-card .right .pricing .new-pricing {
+.product-card .new-pricing {
   color: var(--Green);
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 32px;
 }
-.product-card .right .pricing .old-pricing {
+.product-card .old-pricing {
   color: var(--Grey);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-decoration: line-through;
 }
-
-/* .product-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 14px;
-} */
